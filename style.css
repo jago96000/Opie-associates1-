@@ -1,0 +1,131 @@
+
+/* Enhanced scroll animation styles */
+.animate-scroll {
+    opacity: 0;
+    transform: translateY(40px) rotateX(10deg);
+    transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-delay: calc(var(--scroll-delay, 0) * 0.1s);
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.animate-fadeInUp {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(30px) rotateX(15deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) rotateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-float {
+    animation: floatUp 0.8s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+.animate-delay-1 { --scroll-delay: 1; }
+.animate-delay-2 { --scroll-delay: 2; }
+.animate-delay-3 { --scroll-delay: 3; }
+
+section:nth-child(odd) .animate-scroll {
+    transform: translateY(40px) rotateX(-10deg);
+}
+body {
+scroll-behavior: smooth;
+margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #1a2e3b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3a7ca5;
+border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #2f6690;
+}
+@keyframes text-shine {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+.animate-text {
+    background-size: 300% auto;
+    animation: text-shine 6s ease infinite alternate;
+    letter-spacing: -0.05em;
+    line-height: 1.1;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+/* Image hover effects */
+.group:hover img {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    filter: brightness(1.05) contrast(1.1);
+}
+
+/* Logo animation */
+@keyframes logo-pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+img[alt="Opie Associates Logo"] {
+    animation: logo-pulse 4s ease-in-out infinite;
+    will-change: transform;
+    filter: drop-shadow(0 0 5px rgba(58, 124, 165, 0.3));
+    transition: all 0.3s ease-out;
+}
+
+img[alt="Opie Associates Logo"]:hover {
+    animation: none;
+    filter: drop-shadow(0 0 15px rgba(58, 124, 165, 0.7));
+}
+/* Active nav link */
+.nav-link.active span {
+    color: #3a7ca5;
+    font-weight: 600;
+}
+.nav-link.active::after {
+    transform: scaleX(1);
+    background: linear-gradient(90deg, rgba(58,124,165,0.5), rgba(47,102,144,0.5));
+}
+
+/* Logo hover effects */
+.logo-gradient {
+    background: linear-gradient(45deg, #3a7ca5, #2f6690);
+background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

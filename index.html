@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opie Associates | Transform Your Workplace Culture</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { 500: '#64748b' },
+                        secondary: { 500: '#78716c' }
+                    },
+                    fontFamily: {
+                        brand: ['Playfair Display', 'serif'],
+                        display: ['Poppins', 'sans-serif']
+}
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-[#0f2027] via-[#1a2e3b] to-[#0f2027] text-stone-100 min-h-screen overflow-x-hidden font-display">
+<custom-navbar></custom-navbar>
+<main class="container mx-auto px-4 py-12">
+    <!-- Add animate-scroll class to all sections -->
+<!-- Brand Header (Updated Opie Associates Aesthetic) -->
+<section class="text-center mb-24 animate-scroll">
+<h1 class="font-brand text-6xl md:text-7xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-primary-200 to-primary-500 drop-shadow-xl">
+        Opie Associates
+    </h1>
+    <div class="flex items-center justify-center mt-4">
+        <img src="https://huggingface.co/spaces/Jago96/cultureshift-catalyst/resolve/main/images/Opie%20logo%20web%20(1).jpg" 
+             alt="Opie Associates Logo" 
+             class="h-20 w-auto mx-auto transition-all duration-500 transform hover:scale-110 hover:drop-shadow-[0_0_15px_rgba(58,124,165,0.7)]">
+    </div>
+</section>
+<!-- Hero Section -->
+<section class="flex flex-col md:flex-row items-center justify-between gap-12 mb-24 animate-scroll">
+<div class="md:w-1/2 space-y-6">
+        <h2 class="text-4xl md:text-6xl font-display font-bold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-primary-300 to-primary-500 animate-text">
+            Transform Your Workplace Culture
+        </h2>
+        <p class="text-xl text-stone-300/80 leading-relaxed">
+            We help organizations navigate cultural transformations with
+            <span class="font-medium text-primary-300">proven strategies</span> and
+            <span class="font-medium text-primary-300">measurable results</span>.
+        </p>
+        <div class="flex flex-wrap gap-4 pt-4">
+            <a href="#services" class="relative group bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl">
+                <span class="relative z-10">Our Services</span>
+            </a>
+            <a href="#contact" class="relative group border border-stone-600 hover:border-primary-400 text-white px-8 py-4 rounded-lg font-medium transition-all duration-300 hover:bg-stone-800/50">
+                <span class="relative z-10">Contact Us</span>
+            </a>
+        </div>
+    </div>
+    <div class="md:w-1/2">
+        <div class="relative group">
+            <div class="absolute -inset-4 bg-gradient-to-r from-primary-500 to-primary-600 rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+            <img src="https://media.licdn.com/dms/image/D4E22AQF99Lb9YsOFTA/feedshare-shrink_2048_1536/0/1715210283383?e=2147483647&v=beta&t=mU5I3xxhvE8PUjTFRpwxg5_44BBlMoulPxz-33P65Uk" 
+                 alt="Richard Opie of Opie Associates" 
+                 class="w-full h-auto object-cover rounded-2xl transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-2xl">
+            <div class="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-primary-500/30 transition-all duration-500 pointer-events-none"></div>
+        </div>
+    </div>
+</section>
+<!-- Services Preview -->
+        <section id="services" class="mb-24 scroll-mt-24 animate-scroll">
+<div class="text-center mb-16">
+                <span class="text-primary-400 font-medium tracking-widest text-sm uppercase">Our Expertise</span>
+                <h2 class="text-4xl font-bold mt-2 bg-clip-text text-transparent bg-gradient-to-r from-white to-primary-400">What We Offer</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-800/50 backdrop-blur-sm p-8 rounded-2xl hover:shadow-xl transition-all border border-slate-700 hover:border-primary-500/30">
+<div class="bg-primary-500 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="users" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Culture Assessment</h3>
+                    <p class="text-stone-300">
+                        Comprehensive analysis of your current organizational culture with actionable insights.
+                    </p>
+                    <a href="services.html" class="group inline-flex items-center mt-4 text-primary-400 hover:text-primary-300 font-medium transition-all duration-300">
+                        <span>Learn more</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-5 w-5 opacity-0 group-hover:opacity-100 transform group-hover:translate-x-1 transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
+</div>
+                <div class="bg-slate-800 p-6 rounded-xl hover:shadow-xl transition-all">
+                    <div class="bg-primary-500 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="trending-up" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Change Strategy</h3>
+                    <p class="text-stone-300">
+                        Customized roadmaps for sustainable cultural transformation aligned with your goals.
+                    </p>
+                    <a href="services.html" class="group inline-flex items-center mt-4 text-primary-400 hover:text-primary-300 font-medium transition-all duration-300">
+                        <span>Learn more</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-5 w-5 opacity-0 group-hover:opacity-100 transform group-hover:translate-x-1 transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
+</div>
+                <div class="bg-slate-800 p-6 rounded-xl hover:shadow-xl transition-all">
+                    <div class="bg-primary-500 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="award" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Leadership Training</h3>
+                    <p class="text-stone-300">
+                        Develop culturally competent leaders who can drive and sustain meaningful change.
+                    </p>
+                    <a href="services.html" class="group inline-flex items-center mt-4 text-primary-400 hover:text-primary-300 font-medium transition-all duration-300">
+                        <span>Learn more</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-5 w-5 opacity-0 group-hover:opacity-100 transform group-hover:translate-x-1 transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
+</div>
+            </div>
+        </section>
+<section id="contact" class="relative overflow-hidden bg-gradient-to-r from-primary-500 to-primary-700 rounded-2xl p-12 text-center scroll-mt-24 animate-scroll">
+<div class="absolute -right-20 -top-20 w-64 h-64 bg-primary-400/10 rounded-full"></div>
+            <div class="absolute -left-20 -bottom-20 w-64 h-64 bg-primary-400/10 rounded-full"></div>
+            <div class="relative z-10">
+            <h2 class="text-4xl font-bold mb-4">Ready to Transform Your Culture?</h2>
+            <p class="text-stone-100/80 text-lg mb-8 max-w-2xl mx-auto">
+                Let's discuss how we can help your organization achieve its <span class="font-medium text-white">cultural transformation</span> goals.
+            </p>
+            <a href="contact.html" class="inline-block relative group bg-white text-slate-900 hover:bg-stone-100 px-10 py-4 rounded-lg font-semibold shadow-lg transition-all duration-300 hover:shadow-xl">
+                <span class="relative z-10">Get in Touch</span>
+                <span class="absolute inset-0 bg-gradient-to-r from-white to-stone-200 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+            </a>
+</section>
+    </main>
+    <custom-footer></custom-footer>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+    <script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>

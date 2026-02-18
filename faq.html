@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Opie Associates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { 500: '#64748b' },
+                        secondary: { 500: '#78716c' }
+                    },
+                    fontFamily: {
+                        brand: ['Playfair Display', 'serif'],
+                        display: ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#0f2027] text-stone-100 min-h-screen font-display">
+    <custom-navbar></custom-navbar>
+    
+    <main class="container mx-auto px-4 py-16">
+        <!-- FAQ Header -->
+        <section class="text-center mb-16 animate-scroll">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500">
+                Frequently Asked Questions
+            </h1>
+            <p class="text-lg text-stone-300 max-w-2xl mx-auto">
+                Find answers to common questions about our services and approach to cultural transformation.
+            </p>
+        </section>
+
+        <!-- FAQ Accordion -->
+        <section class="max-w-3xl mx-auto mb-16 animate-scroll">
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 hover:border-primary-500/30 transition-all">
+                    <button class="faq-toggle w-full text-left p-6 flex justify-between items-center">
+                        <h3 class="text-xl font-semibold">What makes your approach to cultural transformation unique?</h3>
+                        <i data-feather="chevron-down" class="transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-stone-300">
+                            Our approach combines quantitative diagnostics with qualitative insights and co-created interventions. We blend evidence-led methodologies with people-centered design, ensuring changes are measurable, sustainable, and tailored to your organization's specific context.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 hover:border-primary-500/30 transition-all">
+                    <button class="faq-toggle w-full text-left p-6 flex justify-between items-center">
+                        <h3 class="text-xl font-semibold">How long does a typical cultural transformation take?</h3>
+                        <i data-feather="chevron-down" class="transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-stone-300">
+                            Transformation timelines vary based on organizational size and complexity. Our assessment phase typically takes 4-6 weeks, with implementation roadmaps spanning 6-18 months. We emphasize sustainable change over quick fixes, with ongoing support available.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 hover:border-primary-500/30 transition-all">
+                    <button class="faq-toggle w-full text-left p-6 flex justify-between items-center">
+                        <h3 class="text-xl font-semibold">What industries do you specialize in?</h3>
+                        <i data-feather="chevron-down" class="transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-stone-300">
+                            We work across multiple sectors including healthcare, technology, finance, education, and manufacturing. Our principles of cultural transformation are universal, though we tailor our approach to each industry's specific challenges and regulatory environments.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 hover:border-primary-500/30 transition-all">
+                    <button class="faq-toggle w-full text-left p-6 flex justify-between items-center">
+                        <h3 class="text-xl font-semibold">How do you measure the success of cultural interventions?</h3>
+                        <i data-feather="chevron-down" class="transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-stone-300">
+                            We use a combination of quantitative metrics (employee engagement scores, retention rates, productivity measures) and qualitative indicators (leadership feedback, cultural artifacts analysis). Baseline measurements are established during assessment and progress is tracked at regular intervals.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 hover:border-primary-500/30 transition-all">
+                    <button class="faq-toggle w-full text-left p-6 flex justify-between items-center">
+                        <h3 class="text-xl font-semibold">What is your typical engagement process?</h3>
+                        <i data-feather="chevron-down" class="transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-stone-300 mb-4">Our process follows four key phases:</p>
+                        <ol class="list-decimal ml-6 space-y-2 text-stone-400">
+                            <li>Discovery & Assessment (4-6 weeks)</li>
+                            <li>Strategy Development & Alignment (2-4 weeks)</li>
+                            <li>Implementation & Training (3-12 months)</li>
+                            <li>Sustainability & Evaluation (ongoing)</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center animate-scroll">
+            <h2 class="text-2xl font-semibold mb-4">Still have questions?</h2>
+            <a href="contact.html" class="inline-block bg-gradient-to-r from-primary-500 to-secondary-500 hover:from-primary-600 hover:to-secondary-600 text-white px-8 py-3 rounded-lg font-medium shadow-lg transition-all">
+                Contact Our Team
+            </a>
+        </section>
+    </main>
+
+    <script>
+        // FAQ Accordion Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqToggles = document.querySelectorAll('.faq-toggle');
+            
+            faqToggles.forEach(toggle => {
+                toggle.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    // Toggle content
+                    content.classList.toggle('hidden');
+                    
+                    // Rotate icon
+                    if (content.classList.contains('hidden')) {
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                    
+                    // Close other open FAQs
+                    faqToggles.forEach(otherToggle => {
+                        if (otherToggle !== toggle) {
+                            otherToggle.nextElementSibling.classList.add('hidden');
+                            otherToggle.querySelector('i').style.transform = 'rotate(0deg)';
+                        }
+                    });
+                });
+            });
+            
+            feather.replace();
+        });
+    </script>
+
+    <custom-footer></custom-footer>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

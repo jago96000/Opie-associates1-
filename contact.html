@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Opie Associates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { 500: '#64748b' },
+                        secondary: { 500: '#78716c' }
+                    },
+                    fontFamily: {
+                        brand: ['Playfair Display', 'serif'],
+                        display: ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-[#0f2027] via-[#1a2e3b] to-[#0f2027] text-stone-100 min-h-screen font-display">
+<custom-navbar></custom-navbar>
+    
+    <main class="container mx-auto px-4 py-12">
+        <!-- Contact Header -->
+        <section class="text-center mb-16 animate-scroll">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Get in Touch</h1>
+            <p class="text-lg text-stone-300 max-w-2xl mx-auto">
+                Ready to transform your workplace culture? Contact us today to discuss how we can help your organization.
+            </p>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="max-w-3xl mx-auto animate-scroll">
+            <form action="https://api.web3forms.com/submit" method="POST" class="max-w-2xl mx-auto space-y-6 text-left bg-white/10 backdrop-blur p-8 rounded-2xl border border-white/20">
+
+                <!-- Web3Forms Access Key -->
+                <input type="hidden" name="access_key" value="69753945-0b78-436d-87c0-ae8f2c19f0e3">
+
+                <!-- Email Subject -->
+                <input type="hidden" name="subject" value="New Contact Message from Opie Associates">
+
+                <!-- Where reply emails should go -->
+                <input type="hidden" name="from_name" value="Opie Associates Website">
+
+                <!-- Spam Protection -->
+                <input type="checkbox" name="botcheck" style="display:none;">
+
+                <div>
+                    <label class="block mb-1 font-medium text-stone-300">Name</label>
+                    <input type="text" name="name" required
+                           class="w-full p-3 rounded-lg bg-white/20 border border-white/30 focus:border-primary-300 outline-none text-stone-100">
+                </div>
+
+                <div>
+                    <label class="block mb-1 font-medium text-stone-300">Email</label>
+                    <input type="email" name="email" required
+                           class="w-full p-3 rounded-lg bg-white/20 border border-white/30 focus:border-primary-300 outline-none text-stone-100">
+                </div>
+
+                <div>
+                    <label class="block mb-1 font-medium text-stone-300">Message</label>
+                    <textarea name="message" rows="5" required
+                              class="w-full p-3 rounded-lg bg-white/20 border border-white/30 focus:border-primary-300 outline-none text-stone-100"></textarea>
+                </div>
+
+                <button type="submit"
+                        class="w-full bg-white text-slate-900 py-3 rounded-lg font-semibold shadow-lg hover:bg-stone-100 transition-all">
+                    Send Message
+                </button>
+            </form>
+</section>
+<!-- Contact Info -->
+        <section class="mt-16 animate-scroll">
+            <div class="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+                <div class="bg-slate-800 rounded-xl p-6 text-center hover:shadow-xl transition-all">
+                    <div class="bg-primary-500/20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="mail" class="w-6 h-6 text-primary-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Email Us</h3>
+                    <p class="text-stone-300">rich@opie-associates.co.uk</p>
+                </div>
+                <div class="bg-slate-800 rounded-xl p-6 text-center hover:shadow-xl transition-all">
+                    <div class="bg-primary-500/20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="phone" class="w-6 h-6 text-primary-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Call Us</h3>
+                    <p class="text-stone-300">07798 718321</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
